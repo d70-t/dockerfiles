@@ -15,12 +15,12 @@ RUN apt-get update && apt-get install -y \
     gawk \
  && rm -rf /var/lib/apt/lists/*
 
-RUN cd /tmp && \
-    wget -nd -c http://prdownloads.sourceforge.net/nccmp/nccmp-1.8.2.1.tar.gz && \
-    tar zxvf nccmp-*.tar.gz && \
-    cd nccmp-* && \
-    ./configure && \
-    make -j && \
-    make install-strip && \
-    cd / && \
-    rm -rf /tmp/nccmp*
+RUN cd /tmp \
+ && wget -nd -c http://prdownloads.sourceforge.net/nccmp/nccmp-1.8.2.1.tar.gz \
+ && tar zxvf nccmp-*.tar.gz \
+ && cd nccmp-* \
+ && ./configure \
+ && make -j \
+ && make install-strip \
+ && cd / \
+ && rm -rf /tmp/nccmp*
