@@ -4,7 +4,7 @@ MAINTAINER Tobias Kölling <tobias.koelling@physik.uni-muenchen.de>
 
 RUN apt-get update \
  && apt-get install -y libflann-dev libvtk6-dev libpng-dev zlib1g-dev \
- && rm -rf /var/lib/apt/lists/* \
+ && rm -rf /var/lib/apt/lists/*
 RUN cd / \
  && git clone https://github.com/PointCloudLibrary/pcl.git \
  && cd /pcl \
