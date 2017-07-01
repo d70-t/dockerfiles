@@ -1,4 +1,4 @@
-FROM teppich/opencv_gcc
+FROM teppich/opencv:gcc
 
 MAINTAINER Tobias Kölling <tobias.koelling@physik.uni-muenchen.de>
 

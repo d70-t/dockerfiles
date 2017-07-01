@@ -1,4 +1,4 @@
-FROM teppich/opencv_clang
+FROM teppich/opencv:clang
 
 MAINTAINER Tobias Kölling <tobias.koelling@physik.uni-muenchen.de>
 
