@@ -1,4 +1,4 @@
-FROM ubuntu:16.10
+FROM ubuntu:17.10
 
 MAINTAINER Tobias Kölling <tobias.koelling@physik.uni-muenchen.de>
 
